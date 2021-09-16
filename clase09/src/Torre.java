@@ -34,7 +34,7 @@ public class Torre extends Pieza {
         int x = Math.abs( posicionFinal.getX() - posicionInicial.getX() );
         int y = Math.abs( posicionFinal.getY() - posicionInicial.getY() );
 
-        return ( ( (x != 0) && (y==0) ) || ( ( x == 0) && ( y != 0) ) );
+        return ( ( (x!= 0) && (y==0) ) || ( ( x==0) && ( y!= 0) ) );
 
     }
 }
