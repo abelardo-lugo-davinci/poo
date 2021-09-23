@@ -58,4 +58,5 @@ public class Movimiento {
     public void setPiezaCapturada(Pieza piezaCapturada) {
         this.piezaCapturada = piezaCapturada;
     }
+
 }

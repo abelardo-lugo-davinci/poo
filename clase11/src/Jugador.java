@@ -4,7 +4,6 @@ public class Jugador {
 
     boolean blanca = true;
 
-
     // CONSTRUCTORES
 
     public Jugador(boolean blanca) {
