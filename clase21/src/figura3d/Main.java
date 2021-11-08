@@ -13,15 +13,24 @@ public class Main {
         System.out.println(ortoedro.calcularVolumen());
         System.out.println(ortoedro.calcularArea());
 
-        Cubo cubo = new Cubo(2);
-        System.out.println(cubo);
-        System.out.println(cubo.calcularVolumen());
-        System.out.println(cubo.calcularArea());
+        Cubo primerCubo = new Cubo(2);
+        System.out.println(primerCubo);
+        System.out.println(primerCubo.calcularVolumen());
+        System.out.println(primerCubo.calcularArea());
 
         TetraedroRegular tetraedroRegular = new TetraedroRegular(3);
         System.out.println(tetraedroRegular);
         System.out.println(tetraedroRegular.calcularVolumen());
         System.out.println(tetraedroRegular.calcularArea());
+
+        System.out.println(Math.PI);
+        System.out.println(Math.sqrt(64));
+
+        Cubo segundoCubo = new Cubo(12);
+
+        System.out.println(Cubo.CARAS);
+        System.out.println(primerCubo.CARAS);
+        System.out.println(segundoCubo.CARAS);
 
     }
 

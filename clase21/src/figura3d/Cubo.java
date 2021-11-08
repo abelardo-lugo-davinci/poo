@@ -38,4 +38,10 @@ public class Cubo extends FiguraTridimensional{
         return "La figura es un " + this.getClass().getSimpleName();
     }
 
+    // Métodos estáticos
+
+    public static double mostrarCaras(){
+        return CARAS;
+    }
+
 }
