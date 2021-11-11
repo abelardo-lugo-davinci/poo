@@ -3,24 +3,25 @@ package sensores;
 public class SensorSeguro extends Sensor {
 
     // ATRIBUTO
-    private double presionMaxima;
+    private double maximo;
 
     // CONSTRUCTORES
-    public SensorSeguro(double presionMaxima){
-        this.presionMaxima = presionMaxima;
+    public SensorSeguro(double maximo){
+        super();
+        this.maximo = maximo;
     }
 
-    public SensorSeguro(double presionMaxima, double presionLectura){
-        super(presionLectura);
-        this.presionMaxima = presionMaxima;
+    public SensorSeguro(double maximo, double presion){
+        super(presion);
+        this.maximo = maximo;
     }
 
     // METODOS
 
     // Setters
-    public boolean setPresionLectura(double presionLectura){
-        if (presionLectura < presionMaxima){
-            setPresion(presionLectura);
+    public boolean setPresionLectura(double presion){
+        if (presion < maximo){
+            setPresion(presion);
             return true;
         } else {
             return false;
@@ -28,8 +29,8 @@ public class SensorSeguro extends Sensor {
     }
 
     // Getters
-    public double getPresionMaxima(){
-        return presionMaxima;
+    public double getMaximo(){
+        return maximo;
     }
 
 }

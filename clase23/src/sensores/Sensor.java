@@ -3,30 +3,30 @@ package sensores;
 public abstract class Sensor {
 
     // ATRIBUTOS
-    private double presionLectura;
+    private double presion;
 
     // CONSTRUCTORES
     public Sensor(){}
 
-    public Sensor(double presionLectura){
-        this.presionLectura = presionLectura;
+    public Sensor(double presion){
+        this.presion = presion;
     }
 
     // METODOS
 
     // Setters
-    public boolean setPresion(double presionLectura){
-        if(presionLectura > 0){
-            this.presionLectura = presionLectura;
+    public boolean setPresion(double presion){
+        if (presion > 0){
+            this.presion = presion;
             return true;
-        } else{
+        } else {
             return false;
         }
     }
 
     // Getters
-    public double getPresionLectura(){
-        return presionLectura;
+    public double getPresion(){
+        return presion;
     }
 
 }
